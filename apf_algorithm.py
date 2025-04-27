@@ -44,7 +44,7 @@ class APF:
         self.stepSize = 0.2  # 物体移动的固定步长
         self.dgoal = 5  # 当q与qgoal距离超过它时将衰减一部分引力
         self.r0 = 5  # 斥力超过这个范围后将不复存在
-        self.threshold = 0.2  # q与qgoal距离小于它时终止训练或者仿真
+        self.threshold = 1  # q与qgoal距离小于它时终止训练或者仿真
         # ------------运动学约束------------#
         self.xmax = 10 / 180 * np.pi  # 偏航角速度最大值  每个步长允许变化的角度
         self.gammax = 10 / 180 * np.pi  # 爬升角速度最大值  每个步长允许变化的角度
